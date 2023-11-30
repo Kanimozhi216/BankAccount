@@ -7,12 +7,15 @@ Card Insertion: Users are prompted to insert their card by pressing any key.
 Account Details: After card insertion, the program displays account details, including name, account number, bank name, and account type.
 Operations: Users can perform various operations such as balance inquiry, deposit, and withdrawal.
 User-Friendly Interface: The program provides a simple and intuitive command-line interface for user interaction.
+
+SOURCE CODE:
+
 #include <iostream>
 #include <string>
 
 class BankAccount {
-private:
 
+private:
     std::string name;
     std::string accNumber;
     std::string accType;
@@ -23,7 +26,6 @@ public:
     void showBalance() {
         std::cout << "\nBalance Amount: " << balance << std::endl;
     }
-
     void deposit() {
         double amount1;
         std::cout << "\nEnter the amount you want to Deposit: ";
